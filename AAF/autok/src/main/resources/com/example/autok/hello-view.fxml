@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<HBox spacing="10.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autok.HelloController">
+   <children>
+      <VBox maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+         <children>
+            <Label text="Console:" />
+            <ListView fx:id="lvConsole" maxWidth="1.7976931348623157E308" prefHeight="300.0" prefWidth="500.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+      <VBox maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+         <children>
+            <Label text="Autók:" />
+            <ListView fx:id="lvAutok" maxWidth="1.7976931348623157E308" prefHeight="300.0" prefWidth="300.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</HBox>

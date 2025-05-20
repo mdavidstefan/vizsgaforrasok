@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.levelek.HelloController">
+   <children>
+      <HBox>
+         <children>
+            <ComboBox fx:id="cmbxFelado" prefWidth="150.0" promptText="feladó" />
+            <ComboBox fx:id="cmbxCimzett" prefWidth="150.0" promptText="címzett" />
+            <TextField alignment="CENTER" prefWidth="75.0" promptText="időpont" />
+            <TextField alignment="CENTER" prefWidth="75.0" promptText="hossz" />
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@delete.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@update.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" onMousePressed="#onInsertPressed" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@insert.png" />
+               </image></ImageView>
+         </children>
+      </HBox>
+      <TableView fx:id="tblLevelek" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="colFelado" prefWidth="150.0" text="Feladó" />
+          <TableColumn fx:id="colCimzett" prefWidth="150.0" text="Címzett" />
+          <TableColumn fx:id="colIdopont" prefWidth="75.0" text="Időpont" />
+            <TableColumn fx:id="colHossz" prefWidth="75.0" text="Hossz" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

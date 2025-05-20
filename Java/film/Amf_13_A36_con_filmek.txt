@@ -1,0 +1,38 @@
+
+ A H:\Feladat\filmek.csv utf-8 kódolt fájl filmek adatait tartalmazza,
+ pontosvesszővel tagolva (fejléc nélkül!): Cím;Év;Hossz;Pont!
+
+ 0. Hozzunk létre adatszerkezetet a filmek adatainak eltárolására,
+    majd olvassuk be a fájl tartalmát!
+    Írjuk ki a beolvasott adatok számát!
+ 1. Keressük meg a leghosszabb filmet,
+    és jelenítsük meg címét és a hosszát!
+ 2. Keressük meg a legrégebbi filmet,
+    és jelenítsük meg a címét és a megjelenés évét!
+ 3. Határozzuk meg a filmek átlagpontszámát,
+    és jelezzük ki egy tizedes pontossággal!
+ 4. Válasszunk ki (ismétlődés nélkül) hat filmet,
+    és írjuk ki a címeiket!
+    A címeket írjuk ki a hat.txt fájlba is!
+ 5. Írjuk ki mely évtizedekben jelentek meg a filmek!
+    Válasszunk ki egyet közülük véletlenszerűen,
+    és írjuk ki az akkor megjelent filmek címét és évét!
+
+ Kimenet:
+
+ 0) 26 film adata beolvasva
+ 1) Leghosszabb film: Rettenthetetlen (178 perc)
+ 2) Legrégebbi film: Gyalog galopp (1975)
+ 3) Átlagpontszám: 8,3
+ 4) Véletlenszerűen választott hat film:
+    1. Élősködők
+    2. Így neveld a sárkányodat
+    3. Vissza a jövőbe
+    4. Rendőrakadémia
+    5. A nyolcadik utas: a halál
+    6. Forrest Gump
+ 5) Megjelenés évtizedei: 197x 198x 199x 200x 201x 
+    Ezek közül egy véletlen évtized: 200x, filmjei:
+    - A sötét lovag (2008)
+    - Némó nyomában (2003)
+    - Wall-E (2008)

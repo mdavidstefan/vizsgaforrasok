@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+
+<HBox spacing="10.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kemia.HelloController">
+   <children>
+      <VBox spacing="10.0">
+         <children>
+            <Label text="Elemek:" />
+            <TextField fx:id="txElem" editable="false" />
+            <TableView fx:id="tblElem" onMousePressed="#onElem" prefHeight="325.0" prefWidth="165.0">
+              <columns>
+                <TableColumn fx:id="tcJel" prefWidth="50.0" text="Jel" />
+                <TableColumn fx:id="tcNev" prefWidth="100.0" text="Név" />
+              </columns>
+            </TableView>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <VBox spacing="10.0">
+         <children>
+            <Label text="Kötés:" />
+            <TextField fx:id="txKotes" editable="false" prefWidth="60.0" />
+            <HBox spacing="5.0">
+               <children>
+                  <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@insert.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@update.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@delete.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <ListView fx:id="lvKotes" onMousePressed="#onKotes" prefHeight="300.0" prefWidth="60.0" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <VBox spacing="10.0">
+         <children>
+            <HBox>
+               <children>
+                  <Label text="Vegyület:" />
+                  <Label fx:id="lbKotes" textFill="BLUE" />
+               </children>
+            </HBox>
+            <TextField fx:id="txVegyulet" editable="false" />
+            <HBox alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@insert.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <ListView fx:id="lvVegyulet" onMousePressed="#onVegyulet" prefHeight="300.0" prefWidth="165.0" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>

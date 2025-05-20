@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox spacing="10.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mysql.HelloController">
+   <children>
+      <HBox alignment="CENTER_LEFT" spacing="10.0">
+         <children>
+            <Label text="Rendezés" />
+            <Button mnemonicParsing="false" onAction="#onNincsClick" prefWidth="60.0" text="Nincs" />
+            <Button mnemonicParsing="false" onAction="#onCimClick" prefWidth="60.0" text="Cím" />
+            <Button mnemonicParsing="false" onAction="#onEvClick" prefWidth="60.0" text="Év" />
+            <Button mnemonicParsing="false" onAction="#onHosszClick" prefWidth="60.0" text="Hossz" />
+            <Button mnemonicParsing="false" onAction="#onImdbClick" prefWidth="60.0" text="ImDB" />
+            <CheckBox fx:id="cbCsokkeno" mnemonicParsing="false" text="Csökkenő" />
+         </children>
+      </HBox>
+      <HBox spacing="10.0">
+         <children>
+            <ListView fx:id="lsLista" onMousePressed="#onListaPressed" prefHeight="400.0" prefWidth="400.0" />
+            <VBox prefWidth="150.0" spacing="5.0">
+               <children>
+                  <Label text="Cím:" />
+                  <TextField fx:id="txCim" text="?" />
+                  <Label layoutX="10.0" layoutY="10.0" text="Év:" />
+                  <TextField layoutX="10.0" layoutY="27.0" text="?" />
+                  <Label layoutX="10.0" layoutY="52.0" text="Hossz:" />
+                  <TextField layoutX="10.0" layoutY="69.0" text="?" />
+                  <Label layoutX="10.0" layoutY="94.0" text="ImDB:" />
+                  <TextField layoutX="10.0" layoutY="111.0" text="?" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@update.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@insert.png" />
+                           </image>
+                        </ImageView>
+                        <Label maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@delete.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox spacing="10.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mozi.HelloController">
+   <children>
+      <VBox spacing="10.0">
+         <children>
+            <Label text="Cím:" />
+            <TextField fx:id="txCim" />
+            <Label text="Év:" />
+            <TextField fx:id="txEv" />
+            <Label text="Hossz:" />
+            <TextField fx:id="txHossz" />
+            <Label text="ImDB:" />
+            <TextField fx:id="txImdb" />
+            <HBox>
+               <children>
+                  <ImageView fitHeight="48.0" fitWidth="48.0" onMousePressed="#onFelvesz" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@mozi_add.png" />
+                     </image></ImageView>
+                  <ImageView fitHeight="48.0" fitWidth="48.0" onMousePressed="#onModosit" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@mozi_upd.png" />
+                     </image></ImageView>
+                  <ImageView fitHeight="48.0" fitWidth="48.0" onMousePressed="#onTorol" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@mozi_del.png" />
+                     </image></ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <TableView fx:id="tblMozi" onKeyPressed="#onFilmPressed" onMousePressed="#onFilmPressed" prefHeight="350.0" prefWidth="415.0">
+        <columns>
+          <TableColumn fx:id="columnCim" prefWidth="175.0" text="Cím" />
+          <TableColumn fx:id="columnEv" prefWidth="75.0" text="Év" />
+            <TableColumn fx:id="columnHossz" prefWidth="75.0" text="Hossz" />
+            <TableColumn fx:id="columnImdb" prefWidth="75.0" text="ImDB" />
+        </columns>
+      </TableView>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</HBox>

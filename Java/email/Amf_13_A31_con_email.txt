@@ -1,0 +1,35 @@
+
+ A H:\Feladat\email.csv utf-8 kódolt fájl emailek adatait tartalmazza,
+ pontosvesszővel tagolva: ki;kinek;mikor;hossz - a mikor pedig ora:perc!
+ Vigyázat, a fájl első sora fejléc!
+ 
+ 0. Hozzunk létre adatszerkezetet az emailek adatainak eltárolására,
+    majd olvassuk be a fájl tartalmát!
+    Írjuk ki a beolvasott adatok számát!
+ 1. Keressük meg a legkorábban küldött levelet,
+    és jelenítsük meg ki, kinek és mikor küldte!
+ 2. Határozzuk meg a leghosszabb levél méretét, majd jelenítsük
+    meg az ilyen hosszúságú levelek feladóját, címzetjét és méretét!
+ 3. Keressünk olyan leveleket, amit a feladó saját magának küldött!
+    Írjuk ki a feladót és a küldés időpontját,
+    végül, hogy összesen hány ilyen levél van!
+ 4. Számoljuk meg hány különböző feladó található a listában!
+    Mentsük el a különböző feladók email címeit a cimek.txt fájlba!
+    Írjuk ki közülük hány tartozik a gmail.com szerverhez!
+    Írjuk ki milyen más szerverekről vannak még címek!
+
+ Kimenet:
+
+ 0) 826 levél beolvasva
+ 1) Legkorábbi levél: petrakis@citromail.hu -> krisz17@gmail.com (06:03)
+ 2) Leghosszabb levelek:
+    petrakis@citromail.hu -> nemen@freemail.hu (1999 bájt)
+    sanyi17@citromail.hu -> potyi75@gmail.com (1999 bájt)
+ 3) Saját magának küldött levelet:
+    teke11@freemail.hu (19:33)
+    misedina@gmail.com (16:29)
+    regina09@citromail.hu (15:05)
+    Összesen: 3 db
+ 4) Összesen 17 feladó van a listában
+    Közülük 8 darab @gmail.com
+    De van még: @citromail.hu @freemail.hu

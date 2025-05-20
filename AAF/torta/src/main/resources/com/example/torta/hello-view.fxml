@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox spacing="10.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.torta.HelloController">
+   <children>
+      <HBox alignment="CENTER_LEFT" spacing="5.0">
+         <children>
+            <ComboBox fx:id="cmbxFajtak" prefWidth="150.0" />
+            <TextField fx:id="txSzelet" prefWidth="60.0" />
+            <CheckBox fx:id="chbxHab" mnemonicParsing="false" text="Tejszínhab" />
+         </children>
+      </HBox>
+      <HBox spacing="10.0">
+         <children>
+            <TableView fx:id="tblTortak" onKeyPressed="#onClick" onMousePressed="#onClick" prefHeight="300.0" prefWidth="325.0">
+              <columns>
+                <TableColumn fx:id="tcTorta" prefWidth="150.0" text="Torta" />
+                <TableColumn fx:id="tcSzelet" prefWidth="70.0" text="Szelet" />
+                  <TableColumn fx:id="tcHab" prefWidth="90.0" text="Tejszínhab" />
+              </columns>
+            </TableView>
+            <VBox spacing="10.0">
+               <children>
+                  <ImageView fitHeight="48.0" fitWidth="48.0" onMousePressed="#onInsert" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@insert.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="48.0" fitWidth="48.0" onMousePressed="#onUpdate" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@update.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="48.0" fitWidth="48.0" onMousePressed="#onDelete" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@delete.png" />
+                     </image>
+                  </ImageView>
+                  <Label maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS" />
+                  <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@torta.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

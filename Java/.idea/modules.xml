@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java.iml" filepath="$PROJECT_DIR$/.idea/Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/allatok/allatok.iml" filepath="$PROJECT_DIR$/allatok/allatok.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autok/autok.iml" filepath="$PROJECT_DIR$/autok/autok.iml" />
+      <module fileurl="file://$PROJECT_DIR$/email/email.iml" filepath="$PROJECT_DIR$/email/email.iml" />
+      <module fileurl="file://$PROJECT_DIR$/etel/etel.iml" filepath="$PROJECT_DIR$/etel/etel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/film/film.iml" filepath="$PROJECT_DIR$/film/film.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jackie/jackie.iml" filepath="$PROJECT_DIR$/jackie/jackie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kolcsonzesek/kolcsonzesek.iml" filepath="$PROJECT_DIR$/kolcsonzesek/kolcsonzesek.iml" />
+      <module fileurl="file://$PROJECT_DIR$/szopar/szopar.iml" filepath="$PROJECT_DIR$/szopar/szopar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/telefon/telefon.iml" filepath="$PROJECT_DIR$/telefon/telefon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/topcars/topcars.iml" filepath="$PROJECT_DIR$/topcars/topcars.iml" />
+      <module fileurl="file://$PROJECT_DIR$/versenyzok/versenyzok.iml" filepath="$PROJECT_DIR$/versenyzok/versenyzok.iml" />
+    </modules>
+  </component>
+</project>
